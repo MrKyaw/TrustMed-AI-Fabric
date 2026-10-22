@@ -14,7 +14,7 @@ import threading
 from collections.abc import Iterable
 from datetime import datetime
 from pathlib import Path
-from typing import Any, List, TypeVar
+from typing import Any, TypeVar
 
 from pydantic import BaseModel
 
@@ -189,7 +189,7 @@ class Store:
         doc = self.get(entity_type, entity_id)
         return model.model_validate(doc) if doc is not None else None
 
-    def list(self, entity_type: str) -> List[dict[str, Any]]:
+    def list_entities(self, entity_type: str) -> list[dict[str, Any]]:
         with self._lock:
             rows = self._conn.execute(
                 "SELECT doc FROM entities WHERE entity_type=? ORDER BY id",
@@ -197,8 +197,8 @@ class Store:
             ).fetchall()
         return [json.loads(row["doc"]) for row in rows]
 
-    def list_models(self, entity_type: str, model: type[T]) -> List[T]:
-        return [model.model_validate(doc) for doc in self.list(entity_type)]
+    def list_models(self, entity_type: str, model: type[T]) -> list[T]:
+        return [model.model_validate(doc) for doc in self.list_entities(entity_type)]
 
     def count(self, entity_type: str | None = None) -> int:
         with self._lock:
@@ -314,9 +314,9 @@ class Store:
         limit: int = 100,
         after_sequence: int = 0,
         subject_id: str | None = None,
-    ) -> List[LedgerEvent]:
+    ) -> list[LedgerEvent]:
         query = "SELECT * FROM ledger WHERE sequence > ?"
-        params: List[Any] = [after_sequence]
+        params: list[Any] = [after_sequence]
         if subject_id is not None:
             query += " AND subject_id = ?"
             params.append(subject_id)
@@ -326,7 +326,7 @@ class Store:
             rows = self._conn.execute(query, params).fetchall()
         return [self._row_to_event(row) for row in rows]
 
-    def all_events_ascending(self) -> List[LedgerEvent]:
+    def all_events_ascending(self) -> list[LedgerEvent]:
         with self._lock:
             rows = self._conn.execute("SELECT * FROM ledger ORDER BY sequence ASC").fetchall()
         return [self._row_to_event(row) for row in rows]
@@ -402,7 +402,7 @@ class Store:
 
     # --------------------------------------------------------------------- edges
 
-    def edges(self) -> List[dict[str, Any]]:
+    def edges(self) -> list[dict[str, Any]]:
         with self._lock:
             rows = self._conn.execute(
                 "SELECT id, source, target, relation, event_id, occurred_at FROM edges "
@@ -448,8 +448,8 @@ class Store:
         channel: str | None,
         refused: bool,
         answer: str,
-        citations: List[dict[str, Any]],
-        checks: List[dict[str, Any]],
+        citations: list[dict[str, Any]],
+        checks: list[dict[str, Any]],
         latency_ms: float,
         model: str,
         ledger_event_id: str | None = None,
