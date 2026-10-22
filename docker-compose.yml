@@ -1,0 +1,12 @@
+services:
+  trustmed:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - trustmed-data:/data
+    environment:
+      TRUSTMED_DB_PATH: /data/trustmed.db
+      TRUSTMED_REPORT_DIR: /data/reports
+volumes:
+  trustmed-data:
