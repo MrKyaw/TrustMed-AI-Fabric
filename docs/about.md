@@ -5,6 +5,17 @@ content supply chain for regulated life-sciences organisations. It is built to
 demonstrate engineering judgement in AI governance, auditability, content
 operations and measurement, not to be a production SaaS product.
 
+## What it demonstrates
+
+- A complete content lifecycle from claim substantiation to publication and
+  measurement.
+- A policy engine that blocks unsafe or non-compliant content before it is
+  retrieved or published.
+- A governed assistant that refuses unsafe requests and cites approved sources.
+- A tamper-evident audit ledger that makes every state change provable.
+- A fail-closed evaluation gate with committed artifacts.
+- A polished operator console and multiple machine interfaces.
+
 ## Intended audience
 
 - Hiring managers and reviewers looking for evidence of system design.
@@ -28,3 +39,10 @@ operations and measurement, not to be a production SaaS product.
 
 `ai-governance`, `content-supply-chain`, `life-sciences`, `mcp`,
 `traceability`, `rag`, `evaluation`, `fastapi`, `audit-ledger`.
+
+## Why the project is useful
+
+The repository is intentionally small enough to read in an afternoon, but
+complete enough to show how governance, retrieval, measurement and audit fit
+together. It can be used as a template for internal prototypes, a teaching
+example, or a starting point for a production platform.

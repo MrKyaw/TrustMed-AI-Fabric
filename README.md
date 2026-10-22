@@ -200,6 +200,58 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and
 Version 1.0.0. The reference implementation is complete and all 96 tests pass.
 Future work is tracked in [docs/roadmap.md](docs/roadmap.md).
 
+## Screenshots
+
+### Command centre
+
+![Command centre](docs/assets/dashboard-overview.png)
+
+### Content lineage
+
+![Content lineage](docs/assets/dashboard-lineage.png)
+
+### Governed assistant
+
+![Governed assistant](docs/assets/dashboard-assistant-answer.png)
+
+### Governance controls
+
+![Governance controls](docs/assets/dashboard-governance.png)
+
+### Evaluation fabric
+
+![Evaluation fabric](docs/assets/dashboard-evaluations.png)
+
+### Audit ledger
+
+![Audit ledger](docs/assets/dashboard-audit.png)
+
+## Design notes
+
+- The assistant is deliberately extractive. Every substantive sentence is taken
+  from an approved section and carries a citation, which makes grounding
+  measurable and makes unsupported generation structurally impossible in the
+  offline reference mode.
+- Retrieval is filtered before scoring. Draft, expired, out-of-market and
+  audience-mismatched text never reaches the prompt.
+- The audit ledger is append-only and hash-chained. Verification recomputes
+  every hash and checks sequence continuity.
+- The evaluation gate is fail-closed. A single failing case fails the build.
+
+## Extended documentation
+
+- [Architecture](docs/architecture.md)
+- [AI governance](docs/ai-governance.md)
+- [Lineage and traceability](docs/lineage.md)
+- [Data contracts](docs/data-contracts.md)
+- [Evaluation](docs/evals.md)
+- [MCP tools](docs/mcp.md)
+- [Testing](docs/testing.md)
+- [Runbook](docs/runbook.md)
+- [Threat model](docs/threat-model.md)
+- [Roadmap](docs/roadmap.md)
+- [About](docs/about.md)
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
@@ -208,3 +260,9 @@ MIT. See [LICENSE](LICENSE).
 
 If you use this project in research or evaluation work, please cite it using
 [CITATION.cff](CITATION.cff).
+
+---
+
+⭐ Star this repo if you find it useful!
+
+[Report Bug](https://github.com/MrKyaw/TrustMed-AI-Fabric/issues) · [Request Feature](https://github.com/MrKyaw/TrustMed-AI-Fabric/issues) · [Ask Question](https://github.com/MrKyaw/TrustMed-AI-Fabric/discussions)
