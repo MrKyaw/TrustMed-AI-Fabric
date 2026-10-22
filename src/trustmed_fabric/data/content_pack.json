@@ -1,0 +1,728 @@
+{
+  "dataset": {
+    "name": "Northstar demo content pack",
+    "version": "2026.1",
+    "synthetic": true,
+    "notice": "All brands, claims, evidence, people, metrics and URLs in this file are fictional and created for software demonstration only."
+  },
+  "brands": {
+    "ONCRAVIA": {
+      "name": "Oncravia",
+      "therapeutic_area": "oncology",
+      "indication": "advanced solid tumours in a fictional biomarker-defined population"
+    },
+    "AERIVANT": {
+      "name": "Aerivant",
+      "therapeutic_area": "respiratory",
+      "indication": "moderate-to-severe asthma in a fictional adult population"
+    }
+  },
+  "evidence": [
+    {
+      "id": "EV-001",
+      "title": "HORIZON-3 primary efficacy publication",
+      "evidence_type": "CLINICAL_TRIAL",
+      "citation": "HORIZON-3 Investigators. Synthetic Journal of Oncology. 2025;43(suppl):1001. Demonstration citation.",
+      "markets": ["US", "CA", "UK"],
+      "effective_at": "2025-01-15",
+      "expires_at": "2030-12-31",
+      "strength": "HIGH"
+    },
+    {
+      "id": "EV-002",
+      "title": "Oncravia fictional prescribing information v4.0",
+      "evidence_type": "LABEL",
+      "citation": "Oncravia (fictional) Prescribing Information. Northstar Demo Bio; revision 4.0, 2025.",
+      "markets": ["US"],
+      "effective_at": "2025-01-01",
+      "expires_at": "2029-12-31",
+      "strength": "HIGH"
+    },
+    {
+      "id": "EV-003",
+      "title": "HORIZON-3 integrated safety analysis",
+      "evidence_type": "SAFETY_ANALYSIS",
+      "citation": "HORIZON-3 Safety Analysis Group. Synthetic safety report. 2025; demo dataset.",
+      "markets": ["US", "CA", "UK"],
+      "effective_at": "2025-02-01",
+      "expires_at": "2030-06-30",
+      "strength": "HIGH"
+    },
+    {
+      "id": "EV-004",
+      "title": "AIRWAY-2 exacerbation results",
+      "evidence_type": "CLINICAL_TRIAL",
+      "citation": "AIRWAY-2 Investigators. Synthetic Respiratory Journal. 2025;12(4):220-231. Demonstration citation.",
+      "markets": ["UK", "CA"],
+      "effective_at": "2025-04-01",
+      "expires_at": "2030-03-31",
+      "strength": "HIGH"
+    },
+    {
+      "id": "EV-005",
+      "title": "AIRWAY-2 patient-reported outcomes analysis",
+      "evidence_type": "PATIENT_REPORTED_OUTCOMES",
+      "citation": "AIRWAY-2 PRO Analysis. Synthetic Respiratory Journal. 2025;12(6):301-309.",
+      "markets": ["UK"],
+      "effective_at": "2025-06-01",
+      "expires_at": "2030-05-31",
+      "strength": "MODERATE"
+    },
+    {
+      "id": "EV-006",
+      "title": "Aerivant Canadian budget-impact model",
+      "evidence_type": "HEALTH_ECONOMICS",
+      "citation": "Northstar Demo Health Economics. Synthetic Canadian budget-impact model. 2025.",
+      "markets": ["CA"],
+      "effective_at": "2025-05-01",
+      "expires_at": "2028-12-31",
+      "strength": "MODERATE"
+    },
+    {
+      "id": "EV-007",
+      "title": "Oncravia Nurse Navigator program description",
+      "evidence_type": "PROGRAM_DESCRIPTION",
+      "citation": "Oncravia Nurse Navigator Program Handbook. Fictional program documentation, edition 3. 2025.",
+      "markets": ["US"],
+      "effective_at": "2025-01-01",
+      "expires_at": "2029-12-31",
+      "strength": "HIGH"
+    },
+    {
+      "id": "EV-008",
+      "title": "Exploratory overall survival analysis (withdrawn)",
+      "evidence_type": "CLINICAL_TRIAL",
+      "citation": "HORIZON-3 exploratory OS addendum. Synthetic, withdrawn 2025.",
+      "markets": ["US"],
+      "effective_at": "2024-01-01",
+      "expires_at": "2025-06-30",
+      "strength": "LOW"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-001",
+      "text": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86).",
+      "claim_type": "EFFICACY",
+      "evidence_ids": ["EV-001"],
+      "markets": ["US", "CA", "UK"],
+      "status": "APPROVED",
+      "approved_wording": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86).",
+      "reviewed_at": "2025-08-15",
+      "tags": ["topic:efficacy", "topic:study-design"]
+    },
+    {
+      "id": "CLM-002",
+      "text": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash.",
+      "claim_type": "SAFETY",
+      "evidence_ids": ["EV-003"],
+      "markets": ["US", "CA", "UK"],
+      "status": "APPROVED",
+      "approved_wording": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash.",
+      "reviewed_at": "2025-08-15",
+      "tags": ["topic:safety"]
+    },
+    {
+      "id": "CLM-003",
+      "text": "The Oncravia Nurse Navigator program provides US patients with optional one-to-one support, including help understanding insurance and treatment logistics.",
+      "claim_type": "SUPPORT",
+      "evidence_ids": ["EV-007"],
+      "markets": ["US"],
+      "status": "APPROVED",
+      "approved_wording": "The Oncravia Nurse Navigator program provides US patients with optional one-to-one support, including help understanding insurance and treatment logistics.",
+      "reviewed_at": "2025-09-01",
+      "tags": ["topic:patient-support", "topic:infusion-support"]
+    },
+    {
+      "id": "CLM-004",
+      "text": "In AIRWAY-2, Aerivant reduced the annualized rate of moderate-to-severe exacerbations by 34% versus placebo (rate ratio 0.66; 95% CI 0.52-0.84).",
+      "claim_type": "EFFICACY",
+      "evidence_ids": ["EV-004"],
+      "markets": ["UK", "CA"],
+      "status": "APPROVED",
+      "approved_wording": "In AIRWAY-2, Aerivant reduced the annualized rate of moderate-to-severe exacerbations by 34% versus placebo (rate ratio 0.66; 95% CI 0.52-0.84).",
+      "reviewed_at": "2025-09-10",
+      "tags": ["topic:efficacy", "topic:exacerbations"]
+    },
+    {
+      "id": "CLM-005",
+      "text": "In AIRWAY-2, patients reported a 6.1-point improvement in the St George's Respiratory Questionnaire total score at week 52 versus 2.4 points with placebo.",
+      "claim_type": "EFFICACY",
+      "evidence_ids": ["EV-005"],
+      "markets": ["UK"],
+      "status": "APPROVED",
+      "approved_wording": "In AIRWAY-2, patients reported a 6.1-point improvement in the St George's Respiratory Questionnaire total score at week 52 versus 2.4 points with placebo.",
+      "reviewed_at": "2025-09-12",
+      "tags": ["topic:patient-reported-outcomes", "topic:quality-of-life"]
+    },
+    {
+      "id": "CLM-006",
+      "text": "A Canadian budget-impact model estimated that Aerivant would be cost-neutral in year one at the modelled uptake.",
+      "claim_type": "HEALTH_ECONOMICS",
+      "evidence_ids": ["EV-006"],
+      "markets": ["CA"],
+      "status": "APPROVED",
+      "approved_wording": "A Canadian budget-impact model estimated that Aerivant would be cost-neutral in year one at the modelled uptake.",
+      "reviewed_at": "2025-09-20",
+      "tags": ["topic:health-economics"]
+    },
+    {
+      "id": "CLM-007",
+      "text": "Aerivant may reduce oral corticosteroid use in everyday practice.",
+      "claim_type": "EFFICACY",
+      "evidence_ids": ["EV-004"],
+      "markets": ["UK"],
+      "status": "DRAFT",
+      "approved_wording": "Draft wording pending review.",
+      "reviewed_at": "2026-01-10",
+      "tags": ["topic:efficacy"]
+    },
+    {
+      "id": "CLM-008",
+      "text": "Oncravia was associated with improved overall survival in an exploratory analysis.",
+      "claim_type": "EFFICACY",
+      "evidence_ids": ["EV-008"],
+      "markets": ["US"],
+      "status": "EXPIRED",
+      "approved_wording": "Oncravia was associated with improved overall survival in an exploratory analysis.",
+      "reviewed_at": "2024-11-01",
+      "tags": ["topic:efficacy"]
+    },
+    {
+      "id": "CLM-009",
+      "text": "Oncravia is a cure for advanced cancer and works for everyone.",
+      "claim_type": "EFFICACY",
+      "evidence_ids": ["EV-001"],
+      "markets": ["US"],
+      "status": "DRAFT",
+      "approved_wording": "Draft social copy; not approved.",
+      "reviewed_at": "2026-02-01",
+      "tags": ["topic:efficacy"]
+    }
+  ],
+  "assets": [
+    {
+      "id": "ONC-HCP-DA-001",
+      "title": "Oncravia HCP detail aid - HORIZON-3 efficacy",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "DETAIL_AID",
+      "channel": "WEB",
+      "market": "US",
+      "language": "en-US",
+      "audience": "HCP",
+      "status": "APPROVED",
+      "version": 3,
+      "summary": "Field-ready detail aid summarising the HORIZON-3 study design, progression-free survival results and important safety information for US healthcare professionals.",
+      "tags": ["therapeutic_area:oncology", "audience:hcp", "content_type:detail-aid", "market:us", "channel:web", "topic:efficacy", "topic:safety", "topic:study-design"],
+      "claim_ids": ["CLM-001", "CLM-002", "CLM-003"],
+      "owner": "Oncology Medical Affairs",
+      "source_system": "content-studio",
+      "created_days_ago": 210,
+      "approval": {"status": "APPROVED", "approved_days_ago": 120, "expires_in_days": 420, "approved_by": "Dr. A. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-001"},
+      "sections": [
+        {
+          "id": "overview",
+          "heading": "Study design",
+          "body": "HORIZON-3 was a randomized, open-label, phase 3 trial in 612 adults with previously treated advanced solid tumours. Participants received Oncravia plus standard therapy or standard therapy alone. The primary endpoint was progression-free survival assessed by blinded independent review. This is synthetic demonstration content.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "efficacy",
+          "heading": "HORIZON-3 progression-free survival",
+          "body": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86). The separation of the Kaplan-Meier curves was observed from the first scheduled assessment.",
+          "claim_ids": ["CLM-001"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. Serious adverse reactions occurred in 18% of participants receiving Oncravia and required monitoring in the clinical setting. Refer to the fictional prescribing information for the complete safety profile. This is synthetic demonstration content and not medical advice.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        },
+        {
+          "id": "support",
+          "heading": "Patient support",
+          "body": "The Oncravia Nurse Navigator program provides US patients with optional one-to-one support, including help understanding insurance and treatment logistics. The program does not provide clinical advice and does not replace the treating team.",
+          "claim_ids": ["CLM-003"],
+          "safety_information": false
+        }
+      ]
+    },
+    {
+      "id": "ONC-PAT-LP-002",
+      "title": "Oncravia patient landing page - your treatment journey",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "LANDING_PAGE",
+      "channel": "WEB",
+      "market": "US",
+      "language": "en-US",
+      "audience": "PATIENT",
+      "status": "APPROVED",
+      "version": 2,
+      "summary": "Patient-facing page explaining the HORIZON-3 results in plain language, with fair balance, safety information and details of the Nurse Navigator support programme.",
+      "tags": ["therapeutic_area:oncology", "audience:patient", "content_type:landing-page", "market:us", "channel:web", "topic:efficacy", "topic:safety", "topic:patient-support"],
+      "claim_ids": ["CLM-001", "CLM-002", "CLM-003"],
+      "owner": "Oncology Patient Experience",
+      "source_system": "experience-manager",
+      "created_days_ago": 190,
+      "approval": {"status": "APPROVED", "approved_days_ago": 105, "expires_in_days": 300, "approved_by": "Dr. B. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-002"},
+      "sections": [
+        {
+          "id": "about",
+          "heading": "What is Oncravia?",
+          "body": "Oncravia is a fictional medicine studied in adults with advanced solid tumours in the HORIZON-3 trial. Your care team can explain whether a treatment is appropriate for your individual situation. This page is synthetic demonstration content.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "study-results",
+          "heading": "What the HORIZON-3 study showed",
+          "body": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86). Progression-free survival is the time a person lives without the cancer getting worse. Individual results vary.",
+          "claim_ids": ["CLM-001"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. Tell your care team about any side effects you experience. This is fictional demonstration content and must not replace advice from a qualified healthcare professional.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        },
+        {
+          "id": "support",
+          "heading": "Nurse Navigator support",
+          "body": "The Oncravia Nurse Navigator program provides US patients with optional one-to-one support, including help understanding insurance and treatment logistics. A navigator can help you prepare questions for your care team, but does not provide medical advice.",
+          "claim_ids": ["CLM-003"],
+          "safety_information": false
+        }
+      ]
+    },
+    {
+      "id": "ONC-PAT-EM-003",
+      "title": "Oncravia Nurse Navigator welcome email",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "EMAIL",
+      "channel": "EMAIL",
+      "market": "US",
+      "language": "en-US",
+      "audience": "PATIENT",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "Opt-in welcome email for US patients who have asked for information about the fictional Nurse Navigator support programme.",
+      "tags": ["therapeutic_area:oncology", "audience:patient", "content_type:email", "market:us", "channel:email", "topic:patient-support"],
+      "claim_ids": ["CLM-002", "CLM-003"],
+      "owner": "Patient Services",
+      "source_system": "marketing-automation",
+      "created_days_ago": 150,
+      "approval": {"status": "APPROVED", "approved_days_ago": 90, "expires_in_days": 200, "approved_by": "C. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-003"},
+      "sections": [
+        {
+          "id": "welcome",
+          "heading": "You are not navigating this alone",
+          "body": "Thank you for requesting information about support while you consider treatment. The Oncravia Nurse Navigator program provides US patients with optional one-to-one support, including help understanding insurance and treatment logistics.",
+          "claim_ids": ["CLM-003"],
+          "safety_information": false
+        },
+        {
+          "id": "what-to-expect",
+          "heading": "What a navigator can help with",
+          "body": "A navigator can help you prepare questions for your care team, understand insurance paperwork and plan treatment logistics. Navigators do not provide clinical advice or recommend treatment changes.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. This is synthetic demonstration content. Always speak with your care team about treatment questions.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "ONC-HCP-EM-004",
+      "title": "Oncravia congress invitation - HORIZON-3 data session",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "EMAIL",
+      "channel": "EMAIL",
+      "market": "US",
+      "language": "en-US",
+      "audience": "HCP",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "Approved HCP email invitation to a fictional congress data session, including a preview of the HORIZON-3 efficacy and safety data.",
+      "tags": ["therapeutic_area:oncology", "audience:hcp", "content_type:email", "market:us", "channel:email", "topic:congress", "topic:efficacy", "topic:safety"],
+      "claim_ids": ["CLM-001", "CLM-002"],
+      "owner": "Oncology Field Medical",
+      "source_system": "marketing-automation",
+      "created_days_ago": 140,
+      "approval": {"status": "APPROVED", "approved_days_ago": 80, "expires_in_days": 180, "approved_by": "Dr. D. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-004"},
+      "sections": [
+        {
+          "id": "invitation",
+          "heading": "Join the HORIZON-3 data session",
+          "body": "Join a fictional scientific session to review the HORIZON-3 progression-free survival and safety results. The session is intended for US healthcare professionals and includes a moderated question and answer period.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "data-preview",
+          "heading": "Data preview",
+          "body": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86).",
+          "claim_ids": ["CLM-001"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. Refer to the fictional prescribing information for the full safety profile. This is synthetic demonstration content.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "ONC-PAT-BN-005",
+      "title": "Oncravia paid media banner - HORIZON-3 awareness",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "BANNER",
+      "channel": "PAID_MEDIA",
+      "market": "US",
+      "language": "en-US",
+      "audience": "PATIENT",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "Approved US paid media creative with a HORIZON-3 awareness message and a link to fair balance. Approval expires soon, which intentionally triggers a review warning.",
+      "tags": ["therapeutic_area:oncology", "audience:patient", "content_type:banner", "market:us", "channel:paid-media", "topic:efficacy", "topic:safety"],
+      "claim_ids": ["CLM-001", "CLM-002"],
+      "owner": "Oncology Media",
+      "source_system": "advertising-platform",
+      "created_days_ago": 220,
+      "approval": {"status": "APPROVED", "approved_days_ago": 160, "expires_in_days": 20, "approved_by": "Dr. E. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-005"},
+      "sections": [
+        {
+          "id": "copy",
+          "heading": "A HORIZON-3 result to discuss",
+          "body": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86). Ask your care team whether Oncravia is right for you.",
+          "claim_ids": ["CLM-001"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. See the full important safety information on the landing page. Synthetic demonstration content.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "ONC-PAT-SOC-006",
+      "title": "Unapproved social post - life without limits",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "SOCIAL_POST",
+      "channel": "SOCIAL",
+      "market": "US",
+      "language": "en-US",
+      "audience": "PATIENT",
+      "status": "DRAFT",
+      "version": 1,
+      "summary": "A deliberately non-compliant draft used to prove that unapproved and prohibited content is excluded from retrieval and validation.",
+      "tags": ["therapeutic_area:oncology", "audience:patient", "content_type:social-post", "market:us", "channel:social", "topic:efficacy"],
+      "claim_ids": ["CLM-009"],
+      "owner": "Social Studio",
+      "source_system": "social-publisher",
+      "created_days_ago": 10,
+      "approval": null,
+      "sections": [
+        {
+          "id": "hook",
+          "heading": "Life without limits",
+          "body": "Oncravia is a cure for advanced cancer and works for everyone.",
+          "claim_ids": ["CLM-009"],
+          "safety_information": false
+        },
+        {
+          "id": "body",
+          "heading": "Share the hope",
+          "body": "No side effects. Guaranteed results. Talk to your doctor today.",
+          "claim_ids": [],
+          "safety_information": false
+        }
+      ]
+    },
+    {
+      "id": "RES-HCP-DA-007",
+      "title": "Aerivant HCP detail aid - AIRWAY-2 exacerbations",
+      "brand": "AERIVANT",
+      "therapeutic_area": "respiratory",
+      "asset_type": "DETAIL_AID",
+      "channel": "WEB",
+      "market": "UK",
+      "language": "en-GB",
+      "audience": "HCP",
+      "status": "APPROVED",
+      "version": 2,
+      "summary": "UK HCP detail aid covering AIRWAY-2 exacerbation and patient-reported outcome results, with safety information and fair balance.",
+      "tags": ["therapeutic_area:respiratory", "audience:hcp", "content_type:detail-aid", "market:uk", "channel:web", "topic:efficacy", "topic:exacerbations", "topic:patient-reported-outcomes"],
+      "claim_ids": ["CLM-004", "CLM-005"],
+      "owner": "Respiratory Medical Affairs",
+      "source_system": "content-studio",
+      "created_days_ago": 170,
+      "approval": {"status": "APPROVED", "approved_days_ago": 110, "expires_in_days": 365, "approved_by": "Dr. F. Demo", "review_board": "UK Promotional Review Committee", "material_id": "MAT-RES-007"},
+      "sections": [
+        {
+          "id": "study-design",
+          "heading": "AIRWAY-2 study design",
+          "body": "AIRWAY-2 was a randomized, double-blind, placebo-controlled phase 3 trial in 1,204 adults with moderate-to-severe asthma. The primary endpoint was the annualized rate of moderate-to-severe exacerbations over 52 weeks. This is synthetic demonstration content.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "exacerbations",
+          "heading": "Exacerbation results",
+          "body": "In AIRWAY-2, Aerivant reduced the annualized rate of moderate-to-severe exacerbations by 34% versus placebo (rate ratio 0.66; 95% CI 0.52-0.84). The effect was consistent across the predefined subgroups.",
+          "claim_ids": ["CLM-004"],
+          "safety_information": false
+        },
+        {
+          "id": "quality-of-life",
+          "heading": "Patient-reported outcomes",
+          "body": "In AIRWAY-2, patients reported a 6.1-point improvement in the St George's Respiratory Questionnaire total score at week 52 versus 2.4 points with placebo. The St George's Respiratory Questionnaire measures respiratory health status.",
+          "claim_ids": ["CLM-005"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions reported with Aerivant in AIRWAY-2 were nasopharyngitis, headache and cough. Refer to the fictional summary of product characteristics for the complete safety profile. Synthetic demonstration content, not medical advice.",
+          "claim_ids": [],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "RES-PAT-LP-008",
+      "title": "Aerivant patient landing page - breathing with more confidence",
+      "brand": "AERIVANT",
+      "therapeutic_area": "respiratory",
+      "asset_type": "LANDING_PAGE",
+      "channel": "WEB",
+      "market": "UK",
+      "language": "en-GB",
+      "audience": "PATIENT",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "UK patient page explaining AIRWAY-2 in plain language, with exacerbation results, quality-of-life information and important safety information.",
+      "tags": ["therapeutic_area:respiratory", "audience:patient", "content_type:landing-page", "market:uk", "channel:web", "topic:efficacy", "topic:exacerbations", "topic:quality-of-life", "topic:safety"],
+      "claim_ids": ["CLM-004", "CLM-005"],
+      "owner": "Respiratory Patient Experience",
+      "source_system": "experience-manager",
+      "created_days_ago": 130,
+      "approval": {"status": "APPROVED", "approved_days_ago": 55, "expires_in_days": 250, "approved_by": "Dr. G. Demo", "review_board": "UK Promotional Review Committee", "material_id": "MAT-RES-008"},
+      "sections": [
+        {
+          "id": "about",
+          "heading": "What is Aerivant?",
+          "body": "Aerivant is a fictional inhaled medicine studied in adults with moderate-to-severe asthma. Your care team can explain whether it is appropriate for you. This page is synthetic demonstration content.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "exacerbations",
+          "heading": "What AIRWAY-2 showed about flare-ups",
+          "body": "In AIRWAY-2, Aerivant reduced the annualized rate of moderate-to-severe exacerbations by 34% versus placebo (rate ratio 0.66; 95% CI 0.52-0.84). An exacerbation is a worsening of asthma symptoms that may need extra treatment.",
+          "claim_ids": ["CLM-004"],
+          "safety_information": false
+        },
+        {
+          "id": "daily-life",
+          "heading": "Living with asthma",
+          "body": "In AIRWAY-2, patients reported a 6.1-point improvement in the St George's Respiratory Questionnaire total score at week 52 versus 2.4 points with placebo. This questionnaire asks about symptoms, activity and how asthma affects daily life. Individual experiences vary.",
+          "claim_ids": ["CLM-005"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions reported with Aerivant in AIRWAY-2 were nasopharyngitis, headache and cough. Speak with your care team about any side effects. This is fictional demonstration content and not medical advice.",
+          "claim_ids": [],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "RES-HCP-DA-009",
+      "title": "Aerivant Canadian HCP detail aid - value and exacerbations",
+      "brand": "AERIVANT",
+      "therapeutic_area": "respiratory",
+      "asset_type": "DETAIL_AID",
+      "channel": "FIELD",
+      "market": "CA",
+      "language": "en-CA",
+      "audience": "HCP",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "Canadian field detail aid combining AIRWAY-2 exacerbation data with a budget-impact summary, intended for a live field experience.",
+      "tags": ["therapeutic_area:respiratory", "audience:hcp", "content_type:detail-aid", "market:ca", "channel:field", "topic:efficacy", "topic:exacerbations", "topic:health-economics"],
+      "claim_ids": ["CLM-004", "CLM-006"],
+      "owner": "Respiratory Market Access",
+      "source_system": "content-studio",
+      "created_days_ago": 100,
+      "approval": {"status": "APPROVED", "approved_days_ago": 45, "expires_in_days": 150, "approved_by": "Dr. H. Demo", "review_board": "Canadian Promotional Review Committee", "material_id": "MAT-RES-009"},
+      "sections": [
+        {
+          "id": "exacerbations",
+          "heading": "AIRWAY-2 exacerbation results",
+          "body": "In AIRWAY-2, Aerivant reduced the annualized rate of moderate-to-severe exacerbations by 34% versus placebo (rate ratio 0.66; 95% CI 0.52-0.84). The trial enrolled adults with moderate-to-severe asthma.",
+          "claim_ids": ["CLM-004"],
+          "safety_information": false
+        },
+        {
+          "id": "economics",
+          "heading": "Canadian budget-impact summary",
+          "body": "A Canadian budget-impact model estimated that Aerivant would be cost-neutral in year one at the modelled uptake. The model is synthetic and uses fictional assumptions; it is not a prediction of real-world cost.",
+          "claim_ids": ["CLM-006"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions reported with Aerivant in AIRWAY-2 were nasopharyngitis, headache and cough. Refer to the fictional product monograph for the complete safety profile. Synthetic demonstration content.",
+          "claim_ids": [],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "ONC-HCP-DA-010",
+      "title": "Oncravia HCP detail aid - archived prior version",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "DETAIL_AID",
+      "channel": "WEB",
+      "market": "US",
+      "language": "en-US",
+      "audience": "HCP",
+      "status": "APPROVED",
+      "version": 2,
+      "summary": "Previously approved detail aid whose approval has expired. It remains in the archive to demonstrate exclusion, impact analysis and governance gap reporting.",
+      "tags": ["therapeutic_area:oncology", "audience:hcp", "content_type:detail-aid", "market:us", "channel:web", "topic:efficacy", "topic:safety"],
+      "claim_ids": ["CLM-001", "CLM-002"],
+      "owner": "Oncology Medical Affairs",
+      "source_system": "content-studio",
+      "created_days_ago": 420,
+      "approval": {"status": "APPROVED", "approved_days_ago": 380, "expires_in_days": -15, "approved_by": "Dr. I. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-010"},
+      "sections": [
+        {
+          "id": "efficacy",
+          "heading": "HORIZON-3 efficacy summary",
+          "body": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86). This archived version is no longer approved for promotion.",
+          "claim_ids": ["CLM-001"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. Archived synthetic content.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "ONC-PAT-VD-011",
+      "title": "Oncravia patient video - questions for your care team",
+      "brand": "ONCRAVIA",
+      "therapeutic_area": "oncology",
+      "asset_type": "VIDEO",
+      "channel": "WEB",
+      "market": "US",
+      "language": "en-US",
+      "audience": "PATIENT",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "Transcript and captions for a short patient video that explains the HORIZON-3 results and encourages shared decision-making with a care team.",
+      "tags": ["therapeutic_area:oncology", "audience:patient", "content_type:video", "market:us", "channel:web", "topic:efficacy", "topic:safety", "topic:patient-support"],
+      "claim_ids": ["CLM-001", "CLM-002", "CLM-003"],
+      "owner": "Oncology Patient Experience",
+      "source_system": "digital-asset-management",
+      "created_days_ago": 165,
+      "approval": {"status": "APPROVED", "approved_days_ago": 70, "expires_in_days": 400, "approved_by": "Dr. J. Demo", "review_board": "US Promotional Review Committee", "material_id": "MAT-ONC-011"},
+      "sections": [
+        {
+          "id": "transcript",
+          "heading": "Video transcript",
+          "body": "In the HORIZON-3 trial, Oncravia plus standard therapy increased median progression-free survival to 11.8 months versus 7.6 months with standard therapy alone (HR 0.68; 95% CI 0.54-0.86). Ask your care team what these results mean for your situation.",
+          "claim_ids": ["CLM-001"],
+          "safety_information": false
+        },
+        {
+          "id": "support",
+          "heading": "Support mentioned in the video",
+          "body": "The Oncravia Nurse Navigator program provides US patients with optional one-to-one support, including help understanding insurance and treatment logistics. Navigators can help patients prepare questions for their care team.",
+          "claim_ids": ["CLM-003"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions (>=20%) with Oncravia in the HORIZON-3 safety population were fatigue, nausea and rash. This video is synthetic demonstration content and is not medical advice.",
+          "claim_ids": ["CLM-002"],
+          "safety_information": true
+        }
+      ]
+    },
+    {
+      "id": "RES-PAT-EM-012",
+      "title": "Aerivant UK patient email - preparing for your review",
+      "brand": "AERIVANT",
+      "therapeutic_area": "respiratory",
+      "asset_type": "EMAIL",
+      "channel": "EMAIL",
+      "market": "UK",
+      "language": "en-GB",
+      "audience": "PATIENT",
+      "status": "APPROVED",
+      "version": 1,
+      "summary": "Opt-in UK patient email with a reminder to prepare for an asthma review and a link to AIRWAY-2 information and safety guidance.",
+      "tags": ["therapeutic_area:respiratory", "audience:patient", "content_type:email", "market:uk", "channel:email", "topic:efficacy", "topic:exacerbations", "topic:safety"],
+      "claim_ids": ["CLM-004"],
+      "owner": "Respiratory Patient Experience",
+      "source_system": "marketing-automation",
+      "created_days_ago": 80,
+      "approval": {"status": "APPROVED", "approved_days_ago": 40, "expires_in_days": 120, "approved_by": "Dr. K. Demo", "review_board": "UK Promotional Review Committee", "material_id": "MAT-RES-012"},
+      "sections": [
+        {
+          "id": "intro",
+          "heading": "Preparing for your asthma review",
+          "body": "Your next asthma review is a good moment to ask whether your current treatment is working for you. This email links to information about a fictional medicine called Aerivant, which was studied in adults with moderate-to-severe asthma.",
+          "claim_ids": [],
+          "safety_information": false
+        },
+        {
+          "id": "study-results",
+          "heading": "What AIRWAY-2 showed",
+          "body": "In AIRWAY-2, Aerivant reduced the annualized rate of moderate-to-severe exacerbations by 34% versus placebo (rate ratio 0.66; 95% CI 0.52-0.84). Your care team can explain whether these results are relevant to you.",
+          "claim_ids": ["CLM-004"],
+          "safety_information": false
+        },
+        {
+          "id": "safety",
+          "heading": "Important safety information",
+          "body": "The most common adverse reactions reported with Aerivant in AIRWAY-2 were nasopharyngitis, headache and cough. This is synthetic demonstration content. Contact your care team if you have concerns about your asthma.",
+          "claim_ids": [],
+          "safety_information": true
+        }
+      ]
+    }
+  ]
+}

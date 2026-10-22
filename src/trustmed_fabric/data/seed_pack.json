@@ -1,0 +1,311 @@
+{
+  "surfaces": {
+    "web-2026.3": {"status": "SUPPORTED", "provider": "experience-delivery", "release_window_days": 30},
+    "web-2026.2": {"status": "SUPPORTED", "provider": "experience-delivery", "release_window_days": 30},
+    "mktg-2026.2": {"status": "SUPPORTED", "provider": "marketing-automation", "release_window_days": 45},
+    "field-2026.1": {"status": "SUPPORTED", "provider": "field-engagement", "release_window_days": 60},
+    "ads-2025.4": {"status": "DEPRECATED", "provider": "paid-media", "release_window_days": 14}
+  },
+  "experiences": [
+    {
+      "id": "EXP-WEB-US-ONC-PAT",
+      "name": "Oncravia US patient website",
+      "channel": "WEB",
+      "market": "US",
+      "audience": "PATIENT",
+      "url": "https://demo.trustmed.example/us/oncravia",
+      "design_system_version": "ds-2026.2",
+      "surface_version": "web-2026.3",
+      "status": "LIVE",
+      "consent_required": true,
+      "tracking_plan_id": "TP-WEB-US-001",
+      "launched_days_ago": 400,
+      "owner": "Patient Experience"
+    },
+    {
+      "id": "EXP-WEB-US-ONC-HCP",
+      "name": "Oncravia US HCP resource centre",
+      "channel": "WEB",
+      "market": "US",
+      "audience": "HCP",
+      "url": "https://demo.trustmed.example/us/hcp/oncravia",
+      "design_system_version": "ds-2026.2",
+      "surface_version": "web-2026.2",
+      "status": "LIVE",
+      "consent_required": false,
+      "tracking_plan_id": "TP-WEB-US-002",
+      "launched_days_ago": 380,
+      "owner": "HCP Experience"
+    },
+    {
+      "id": "EXP-EM-US-ONC-PAT",
+      "name": "Oncravia US patient email programme",
+      "channel": "EMAIL",
+      "market": "US",
+      "audience": "PATIENT",
+      "url": "https://demo.trustmed.example/email/oncravia-patient",
+      "design_system_version": "ds-2026.1",
+      "surface_version": "mktg-2026.2",
+      "status": "LIVE",
+      "consent_required": true,
+      "tracking_plan_id": "TP-EM-US-003",
+      "launched_days_ago": 350,
+      "owner": "Patient CRM"
+    },
+    {
+      "id": "EXP-EM-US-ONC-HCP",
+      "name": "Oncravia US HCP email programme",
+      "channel": "EMAIL",
+      "market": "US",
+      "audience": "HCP",
+      "url": "https://demo.trustmed.example/email/oncravia-hcp",
+      "design_system_version": "ds-2026.1",
+      "surface_version": "mktg-2026.2",
+      "status": "LIVE",
+      "consent_required": false,
+      "tracking_plan_id": "TP-EM-US-004",
+      "launched_days_ago": 300,
+      "owner": "HCP CRM"
+    },
+    {
+      "id": "EXP-PAID-US-ONC-PAT",
+      "name": "Oncravia US paid media",
+      "channel": "PAID_MEDIA",
+      "market": "US",
+      "audience": "PATIENT",
+      "url": "https://demo.trustmed.example/paid/oncravia",
+      "design_system_version": "ds-2025.4",
+      "surface_version": "ads-2025.4",
+      "status": "LIVE",
+      "consent_required": true,
+      "tracking_plan_id": "TP-PAID-US-005",
+      "launched_days_ago": 280,
+      "owner": "Media Activation"
+    },
+    {
+      "id": "EXP-WEB-UK-RESP-PAT",
+      "name": "Aerivant UK patient website",
+      "channel": "WEB",
+      "market": "UK",
+      "audience": "PATIENT",
+      "url": "https://demo.trustmed.example/uk/aerivant",
+      "design_system_version": "ds-2026.2",
+      "surface_version": "web-2026.3",
+      "status": "LIVE",
+      "consent_required": true,
+      "tracking_plan_id": "TP-WEB-UK-006",
+      "launched_days_ago": 260,
+      "owner": "Patient Experience"
+    },
+    {
+      "id": "EXP-WEB-UK-RESP-HCP",
+      "name": "Aerivant UK HCP resource centre",
+      "channel": "WEB",
+      "market": "UK",
+      "audience": "HCP",
+      "url": "https://demo.trustmed.example/uk/hcp/aerivant",
+      "design_system_version": "ds-2026.2",
+      "surface_version": "web-2026.2",
+      "status": "LIVE",
+      "consent_required": false,
+      "tracking_plan_id": "TP-WEB-UK-007",
+      "launched_days_ago": 240,
+      "owner": "HCP Experience"
+    },
+    {
+      "id": "EXP-EM-UK-RESP-PAT",
+      "name": "Aerivant UK patient email programme",
+      "channel": "EMAIL",
+      "market": "UK",
+      "audience": "PATIENT",
+      "url": "https://demo.trustmed.example/email/aerivant-patient",
+      "design_system_version": "ds-2026.1",
+      "surface_version": "mktg-2026.2",
+      "status": "LIVE",
+      "consent_required": true,
+      "tracking_plan_id": "TP-EM-UK-008",
+      "launched_days_ago": 200,
+      "owner": "Patient CRM"
+    },
+    {
+      "id": "EXP-FIELD-CA-RESP-HCP",
+      "name": "Aerivant Canada field engagement",
+      "channel": "FIELD",
+      "market": "CA",
+      "audience": "HCP",
+      "url": "https://demo.trustmed.example/ca/field/aerivant",
+      "design_system_version": "ds-2026.1",
+      "surface_version": "field-2026.1",
+      "status": "LIVE",
+      "consent_required": false,
+      "tracking_plan_id": "TP-FIELD-CA-009",
+      "launched_days_ago": 180,
+      "owner": "Field Excellence"
+    },
+    {
+      "id": "EXP-SOC-US-ONC-PAT",
+      "name": "Oncravia US social channel",
+      "channel": "SOCIAL",
+      "market": "US",
+      "audience": "PATIENT",
+      "url": "https://demo.trustmed.example/social/oncravia",
+      "design_system_version": "ds-2025.4",
+      "surface_version": "ads-2025.4",
+      "status": "PAUSED",
+      "consent_required": true,
+      "tracking_plan_id": "TP-SOC-US-010",
+      "launched_days_ago": 150,
+      "owner": "Social Studio"
+    }
+  ],
+  "publications": [
+    {
+      "id": "PUB-001",
+      "asset_id": "ONC-HCP-DA-001",
+      "experience_id": "EXP-WEB-US-ONC-HCP",
+      "destination": "https://demo.trustmed.example/us/hcp/oncravia/detail-aid",
+      "external_id": "aem-us-hcp-da-001-v3",
+      "days_ago": 120,
+      "status": "LIVE",
+      "metrics": {"weeks": 8, "impressions": 42000, "engagement_rate": 0.37, "conversion_rate": 0.052}
+    },
+    {
+      "id": "PUB-002",
+      "asset_id": "ONC-PAT-LP-002",
+      "experience_id": "EXP-WEB-US-ONC-PAT",
+      "destination": "https://demo.trustmed.example/us/oncravia/treatment-journey",
+      "external_id": "aem-us-pat-lp-002-v2",
+      "days_ago": 105,
+      "status": "LIVE",
+      "metrics": {"weeks": 8, "impressions": 68000, "engagement_rate": 0.44, "conversion_rate": 0.061}
+    },
+    {
+      "id": "PUB-003",
+      "asset_id": "ONC-PAT-EM-003",
+      "experience_id": "EXP-EM-US-ONC-PAT",
+      "destination": "https://demo.trustmed.example/email/oncravia/welcome",
+      "external_id": "sfmc-us-pat-em-003-v1",
+      "days_ago": 90,
+      "status": "LIVE",
+      "metrics": {"weeks": 6, "impressions": 24000, "engagement_rate": 0.38, "conversion_rate": 0.084}
+    },
+    {
+      "id": "PUB-004",
+      "asset_id": "ONC-HCP-EM-004",
+      "experience_id": "EXP-EM-US-ONC-HCP",
+      "destination": "https://demo.trustmed.example/email/oncravia/congress",
+      "external_id": "sfmc-us-hcp-em-004-v1",
+      "days_ago": 80,
+      "status": "LIVE",
+      "metrics": {"weeks": 6, "impressions": 12000, "engagement_rate": 0.41, "conversion_rate": 0.112}
+    },
+    {
+      "id": "PUB-005",
+      "asset_id": "ONC-PAT-VD-011",
+      "experience_id": "EXP-WEB-US-ONC-PAT",
+      "destination": "https://demo.trustmed.example/us/oncravia/video/questions",
+      "external_id": "aem-us-pat-vd-011-v1",
+      "days_ago": 70,
+      "status": "LIVE",
+      "metrics": {"weeks": 6, "impressions": 31000, "engagement_rate": 0.52, "conversion_rate": 0.058}
+    },
+    {
+      "id": "PUB-006",
+      "asset_id": "RES-HCP-DA-007",
+      "experience_id": "EXP-WEB-UK-RESP-HCP",
+      "destination": "https://demo.trustmed.example/uk/hcp/aerivant/detail-aid",
+      "external_id": "aem-uk-hcp-da-007-v2",
+      "days_ago": 60,
+      "status": "LIVE",
+      "metrics": {"weeks": 6, "impressions": 18500, "engagement_rate": 0.36, "conversion_rate": 0.047}
+    },
+    {
+      "id": "PUB-007",
+      "asset_id": "RES-PAT-LP-008",
+      "experience_id": "EXP-WEB-UK-RESP-PAT",
+      "destination": "https://demo.trustmed.example/uk/aerivant/living-well",
+      "external_id": "aem-uk-pat-lp-008-v1",
+      "days_ago": 55,
+      "status": "LIVE",
+      "metrics": {"weeks": 6, "impressions": 29000, "engagement_rate": 0.47, "conversion_rate": 0.066}
+    },
+    {
+      "id": "PUB-008",
+      "asset_id": "RES-PAT-EM-012",
+      "experience_id": "EXP-EM-UK-RESP-PAT",
+      "destination": "https://demo.trustmed.example/email/aerivant/review",
+      "external_id": "sfmc-uk-pat-em-012-v1",
+      "days_ago": 40,
+      "status": "LIVE",
+      "metrics": {"weeks": 5, "impressions": 15800, "engagement_rate": 0.35, "conversion_rate": 0.073}
+    },
+    {
+      "id": "PUB-009",
+      "asset_id": "ONC-PAT-BN-005",
+      "experience_id": "EXP-PAID-US-ONC-PAT",
+      "destination": "https://demo.trustmed.example/paid/oncravia/banner",
+      "external_id": "ads-us-pat-bn-005-v1",
+      "days_ago": 30,
+      "status": "LIVE",
+      "metrics": {"weeks": 4, "impressions": 96000, "engagement_rate": 0.11, "conversion_rate": 0.012}
+    },
+    {
+      "id": "PUB-010",
+      "asset_id": "ONC-HCP-DA-010",
+      "experience_id": "EXP-WEB-US-ONC-HCP",
+      "destination": "https://demo.trustmed.example/us/hcp/oncravia/detail-aid-archive",
+      "external_id": "aem-us-hcp-da-010-v2",
+      "days_ago": 200,
+      "status": "LIVE",
+      "metrics": null
+    },
+    {
+      "id": "PUB-011",
+      "asset_id": "RES-HCP-DA-009",
+      "experience_id": "EXP-FIELD-CA-RESP-HCP",
+      "destination": "https://demo.trustmed.example/ca/field/aerivant/detail-aid",
+      "external_id": "field-ca-hcp-da-009-v1",
+      "days_ago": 25,
+      "status": "LIVE",
+      "metrics": null
+    }
+  ],
+  "insights": [
+    {
+      "id": "INS-001",
+      "publication_id": "PUB-002",
+      "title": "Patient landing page outperforms paid creative on qualified actions",
+      "finding": "The treatment-journey landing page converted 6.1% of engaged sessions into a qualified action, compared with 1.2% for the paid awareness creative. The landing page receives fewer impressions but produces stronger intent.",
+      "recommendation": "Shift 15% of paid awareness spend to the treatment-journey landing page and keep the paid creative as a top-of-funnel reach play. Re-evaluate after four weeks.",
+      "confidence": 0.86,
+      "generated_days_ago": 9
+    },
+    {
+      "id": "INS-002",
+      "publication_id": "PUB-004",
+      "title": "Congress email lifts HCP detail-aid engagement",
+      "finding": "HCPs exposed to the congress invitation email engaged with the Oncravia detail aid at 41%, above the 36% HCP benchmark. The effect is strongest in the first seven days after the email.",
+      "recommendation": "Sequence the detail aid within 48 hours of the congress email and keep the safety information above the fold.",
+      "confidence": 0.78,
+      "generated_days_ago": 7
+    },
+    {
+      "id": "INS-003",
+      "publication_id": "PUB-007",
+      "title": "UK respiratory page sustains engagement after eight weeks",
+      "finding": "The Aerivant UK patient page sustained a 47% engagement rate across six weeks, with quality-of-life content receiving the most scroll depth.",
+      "recommendation": "Keep the quality-of-life section as the primary content block and test a short 'preparing for your review' module.",
+      "confidence": 0.81,
+      "generated_days_ago": 5
+    },
+    {
+      "id": "INS-004",
+      "publication_id": "PUB-009",
+      "title": "Deprecated ad surface correlates with weaker quality signals",
+      "finding": "The paid awareness creative runs on a deprecated ad surface. Its measurement quality score is 0.71 and its conversion rate is 1.2%, both below the account median.",
+      "recommendation": "Migrate the creative to the supported paid-media surface before the next flight and re-baseline measurement for two weeks.",
+      "confidence": 0.91,
+      "generated_days_ago": 3
+    }
+  ]
+}
