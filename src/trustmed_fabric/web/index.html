@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070b14" />
+    <meta
+      name="description"
+      content="TrustMed AI Fabric - governed, traceable AI for regulated life-sciences content, experiences and measurement. Synthetic reference implementation."
+    />
+    <title>TrustMed AI Fabric - Governed content-to-insight</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <svg class="svg-defs" aria-hidden="true">
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="2"></rect>
+        <rect x="14" y="3" width="7" height="7" rx="2"></rect>
+        <rect x="3" y="14" width="7" height="7" rx="2"></rect>
+        <rect x="14" y="14" width="7" height="7" rx="2"></rect>
+      </symbol>
+      <symbol id="i-lineage" viewBox="0 0 24 24">
+        <circle cx="5" cy="6" r="2.4"></circle>
+        <circle cx="19" cy="6" r="2.4"></circle>
+        <circle cx="12" cy="18" r="2.4"></circle>
+        <path d="M7.4 6h9.2M6.2 8.1l4.7 7.8M17.8 8.1l-4.7 7.8"></path>
+      </symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24">
+        <path d="M12 3l1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3z"></path>
+        <path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z"></path>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path d="M12 3l7 3v5.5c0 4.3-2.8 7.7-7 9.5-4.2-1.8-7-5.2-7-9.5V6l7-3z"></path>
+        <path d="M9 12l2 2 4-4"></path>
+      </symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24">
+        <path d="M9 3h6M10 3v6l-5.2 8.4A2 2 0 006.5 21h11a2 2 0 001.7-3.6L14 9V3"></path>
+        <path d="M7.5 15h9"></path>
+      </symbol>
+      <symbol id="i-ledger" viewBox="0 0 24 24">
+        <rect x="4" y="3" width="16" height="18" rx="3"></rect>
+        <path d="M8 8h8M8 12h8M8 16h5"></path>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 6l6 6-6 6"></path>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <path d="M16 16l4 4"></path>
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+        <path d="M16 8V6a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2h2"></path>
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="M4 12.5l5 5L20 6.5"></path>
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M18 6L6 18"></path>
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h4"></path>
+      </symbol>
+    </svg>
+
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#overview" aria-label="TrustMed AI Fabric home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 3.5l14.3 8.25v16.5L20 36.5 5.7 28.25v-16.5L20 3.5z" stroke="currentColor" stroke-width="1.4"></path>
+              <path d="M13 14.5h14M13 20h9M13 25.5h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <circle cx="27.5" cy="25.5" r="2.2" fill="currentColor"></circle>
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">TrustMed</span>
+            <span class="brand-sub">AI Fabric</span>
+          </span>
+        </a>
+
+        <div class="workspace-pill">
+          <span class="pulse-dot"></span>
+          <span>Reference deployment</span>
+          <span class="synthetic-tag">SYNTHETIC</span>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-item" data-view="overview" href="#overview">
+            <svg><use href="#i-grid"></use></svg><span>Command</span>
+          </a>
+          <a class="nav-item" data-view="lineage" href="#lineage">
+            <svg><use href="#i-lineage"></use></svg><span>Lineage</span>
+          </a>
+          <a class="nav-item" data-view="assistant" href="#assistant">
+            <svg><use href="#i-spark"></use></svg><span>Assistant</span>
+            <span class="nav-badge">MCP</span>
+          </a>
+          <a class="nav-item" data-view="governance" href="#governance">
+            <svg><use href="#i-shield"></use></svg><span>Governance</span>
+          </a>
+          <a class="nav-item" data-view="evaluations" href="#evaluations">
+            <svg><use href="#i-flask"></use></svg><span>Evaluations</span>
+          </a>
+          <a class="nav-item" data-view="audit" href="#audit">
+            <svg><use href="#i-ledger"></use></svg><span>Audit ledger</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-section">
+          <div class="sidebar-label">Interfaces</div>
+          <a class="side-link" href="/docs" target="_blank" rel="noreferrer">
+            <span>OpenAPI docs</span><svg><use href="#i-external"></use></svg>
+          </a>
+          <a class="side-link" href="https://github.com/MrKyaw/TrustMed-AI-Fabric" target="_blank" rel="noreferrer">
+            <span>Source</span><svg><use href="#i-external"></use></svg>
+          </a>
+          <a class="side-link" href="/api/v1/audit/export" download>
+            <span>Audit export</span><svg><use href="#i-download"></use></svg>
+          </a>
+        </div>
+
+        <div class="sidebar-foot">
+          <div class="foot-chain">
+            <span class="chain-dot" id="chain-dot"></span>
+            <span id="chain-status">Checking chain</span>
+          </div>
+          <div class="foot-version">v1.0.0 · SHA-256 ledger</div>
+        </div>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <div class="crumb">
+            <span class="crumb-root">TrustMed</span>
+            <span class="crumb-sep">/</span>
+            <span id="crumb-current">Command</span>
+          </div>
+          <div class="top-actions">
+            <span class="top-note">Synthetic data · no PHI</span>
+            <a class="top-link" href="/healthz" target="_blank" rel="noreferrer">
+              <span class="status-dot"></span>Healthy
+            </a>
+          </div>
+        </header>
+
+        <main id="view" class="view" tabindex="-1">
+          <div class="loading-shell">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-row"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <aside id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <div>
+          <div class="eyebrow" id="drawer-type">Node</div>
+          <h2 id="drawer-title">Details</h2>
+        </div>
+        <button class="icon-btn" id="drawer-close" aria-label="Close details">
+          <svg><use href="#i-x"></use></svg>
+        </button>
+      </div>
+      <div class="drawer-body" id="drawer-body"></div>
+    </aside>
+    <div class="drawer-scrim" id="drawer-scrim" hidden></div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
