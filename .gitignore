@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+junit.xml
+
+# Runtime state
+data/*.db
+data/*.db-*
+data/raw/
+*.log
+.DS_Store
+
+# Local configuration
+.env
+.env.local
+
+# Editor
+.idea/
+.vscode/
+*.swp
