@@ -57,4 +57,4 @@ TOTAL                                2459    175    616    106    90%
 
 6 files skipped due to complete coverage.
 Required test coverage of 88% reached. Total coverage: 90.28%
-============================== 96 passed in 6.45s ==============================
+============================== 96 passed in 6.51s ==============================

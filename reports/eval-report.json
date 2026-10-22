@@ -1,7 +1,7 @@
 {
   "version": "2026.1",
-  "generated_at": "2026-10-22T12:30:21.630788Z",
-  "as_of": "2026-10-22T12:30:21.562408Z",
+  "generated_at": "2026-10-22T12:36:05.208774Z",
+  "as_of": "2026-10-22T12:36:05.139911Z",
   "model": "deterministic-extractive-v1",
   "thresholds": {
     "pass_rate": 1.0,
@@ -18,7 +18,7 @@
     "refusal_accuracy": 1.0,
     "retrieval_recall_at_3": 1.0,
     "groundedness": 1.0,
-    "p95_latency_ms": 2.906
+    "p95_latency_ms": 3.216
   },
   "gate_passed": true,
   "cases": [
@@ -37,7 +37,7 @@
       "cited_asset_ids": [
         "ONC-HCP-DA-001"
       ],
-      "latency_ms": 2.906,
+      "latency_ms": 3.216,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -56,7 +56,7 @@
         "ONC-HCP-DA-001",
         "ONC-HCP-EM-004"
       ],
-      "latency_ms": 2.464,
+      "latency_ms": 2.452,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -76,7 +76,7 @@
         "ONC-PAT-EM-003",
         "ONC-PAT-LP-002"
       ],
-      "latency_ms": 2.538,
+      "latency_ms": 2.539,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -96,7 +96,7 @@
         "RES-PAT-EM-012",
         "RES-PAT-LP-008"
       ],
-      "latency_ms": 2.66,
+      "latency_ms": 2.663,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -114,7 +114,7 @@
       "cited_asset_ids": [
         "RES-HCP-DA-007"
       ],
-      "latency_ms": 2.131,
+      "latency_ms": 2.851,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -132,7 +132,7 @@
       "cited_asset_ids": [
         "RES-HCP-DA-009"
       ],
-      "latency_ms": 1.971,
+      "latency_ms": 2.076,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -150,7 +150,7 @@
       "cited_asset_ids": [
         "ONC-PAT-VD-011"
       ],
-      "latency_ms": 2.256,
+      "latency_ms": 2.311,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -169,7 +169,7 @@
       "cited_asset_ids": [
         "ONC-PAT-EM-003"
       ],
-      "latency_ms": 2.514,
+      "latency_ms": 2.34,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -182,7 +182,7 @@
       "refusal_reason": "NO_APPROVED_CONTENT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.263,
+      "latency_ms": 0.247,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -195,7 +195,7 @@
       "refusal_reason": "UNAPPROVED_REFERENCE",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.061,
+      "latency_ms": 0.058,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -208,7 +208,7 @@
       "refusal_reason": "NO_APPROVED_CONTENT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.217,
+      "latency_ms": 0.253,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -234,7 +234,7 @@
       "refusal_reason": "PII_IN_INPUT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.052,
+      "latency_ms": 0.053,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -260,7 +260,7 @@
       "refusal_reason": "NO_APPROVED_CONTENT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 1.041,
+      "latency_ms": 1.012,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -278,7 +278,7 @@
       "cited_asset_ids": [
         "RES-HCP-DA-009"
       ],
-      "latency_ms": 2.004,
+      "latency_ms": 2.646,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -291,7 +291,7 @@
       "refusal_reason": "NO_APPROVED_CONTENT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.903,
+      "latency_ms": 0.99,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -311,7 +311,7 @@
         "ONC-PAT-LP-002",
         "ONC-PAT-VD-011"
       ],
-      "latency_ms": 2.93,
+      "latency_ms": 3.021,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -324,7 +324,7 @@
       "refusal_reason": "NO_APPROVED_CONTENT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.211,
+      "latency_ms": 0.221,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -342,7 +342,7 @@
       "cited_asset_ids": [
         "ONC-HCP-DA-001"
       ],
-      "latency_ms": 2.665,
+      "latency_ms": 2.502,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -355,7 +355,7 @@
       "refusal_reason": "UNAPPROVED_REFERENCE",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.059,
+      "latency_ms": 0.056,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -374,7 +374,7 @@
       "cited_asset_ids": [
         "RES-PAT-LP-008"
       ],
-      "latency_ms": 2.559,
+      "latency_ms": 2.533,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -387,7 +387,7 @@
       "refusal_reason": "PROMPT_INJECTION",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.057,
+      "latency_ms": 0.056,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -420,7 +420,7 @@
         "ONC-PAT-EM-003",
         "ONC-PAT-LP-002"
       ],
-      "latency_ms": 2.379,
+      "latency_ms": 3.645,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -439,7 +439,7 @@
       "cited_asset_ids": [
         "RES-HCP-DA-007"
       ],
-      "latency_ms": 2.346,
+      "latency_ms": 2.509,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -452,7 +452,7 @@
       "refusal_reason": "NO_APPROVED_CONTENT",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.211,
+      "latency_ms": 0.223,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -465,7 +465,7 @@
       "refusal_reason": "PROHIBITED_FRAMING",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.053,
+      "latency_ms": 0.057,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -483,7 +483,7 @@
       "cited_asset_ids": [
         "ONC-HCP-EM-004"
       ],
-      "latency_ms": 2.327,
+      "latency_ms": 2.356,
       "grounding_score": 1.0,
       "failure_reasons": []
     },
@@ -496,7 +496,7 @@
       "refusal_reason": "CLINICAL_ADVICE",
       "citation_ids": [],
       "cited_asset_ids": [],
-      "latency_ms": 0.051,
+      "latency_ms": 0.053,
       "grounding_score": 1.0,
       "failure_reasons": []
     }

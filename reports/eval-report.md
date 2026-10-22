@@ -2,8 +2,8 @@
 
 **Quality gate:** `PASS`
 
-- Generated: `2026-10-22T12:30:21.630788+00:00`
-- Evaluation clock: `2026-10-22T12:30:21.562408+00:00`
+- Generated: `2026-10-22T12:36:05.208774+00:00`
+- Evaluation clock: `2026-10-22T12:36:05.139911+00:00`
 - Model: `deterministic-extractive-v1`
 - Golden cases: **30/30 passing**
 
@@ -17,7 +17,7 @@
 | Retrieval recall@3 | 1.000 | 0.900 | PASS |
 | Groundedness | 1.000 | 0.900 | PASS |
 
-P95 latency: **2.9 ms** (in-process, deterministic).
+P95 latency: **3.2 ms** (in-process, deterministic).
 
 ## Cases
 
